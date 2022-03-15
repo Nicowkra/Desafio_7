@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Carga de productos</h1>
+    <form id="productsForm">
+        <label>Title</label>
+        <input name="title" type="text" />
+        <label>Price</label>
+        <input name="price" type="number"/>
+        <label >URL Image</label>
+        <input name="thumbnail" type="url">
+        <input type="submit">
+    </form>
+   
+
+    <span id="productTemplate"></span>
+
+    <h1>Canal de chat</h1>
+    <form id="chatForm">
+        <label>Email</label>
+        <input id= "email" type="text"/>
+        <label >Message</label>
+        <input id="message" type="text"/>
+        <input type="submit">
+    </form>
+
+    <span id = "log"></span>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
